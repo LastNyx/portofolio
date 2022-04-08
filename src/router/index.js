@@ -1,11 +1,17 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import Home from '../views/Home.vue'
+import LoaderPage from '../components/LoaderPage.vue'
 
 const routes = [
   {
     path: '/',
     name: 'Home',
     component: Home
+  },
+  {
+    path: '/loading',
+    name: 'loading',
+    component: LoaderPage
   },
   {
     path: '/about',
